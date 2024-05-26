@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title><%= htmlWebpackPlugin.options.title %></title>
+</head>
+<body>
+  <header>  
+    <div class="icon-container">
+      <img alt="icon for dissapear the sidebar">
+    </div>
+
+    <h1>Todo-list APP</h1>
+  </header>
+
+  <div class="sidebar active">
+    <div class="home-section">
+      <h2>Home</h2>
+      <hr>
+
+      <div class="section__proyects__display">
+        <!-- Here comes the proyects displayed by js dinamicaly -->
+      </div>
+      
+    </div>
+    <div class="proyect-section">
+      <h2>Proyects</h2><hr>
+      <div class="section__proyects__display">
+        <!-- Here comes the proyects displayed by js dinamicaly -->
+      </div>
+      <button>Add Proyect Bruv</button>
+    </div>
+  </div>
+  
+  <main class="side-active">
+
+    <section class="display-todos">
+      <!-- Here will be displayed the title and the to-do 
+          content relying on the focused proyect on Home or Proyects
+          section
+      -->
+
+      <div class="todo__item">
+        <div class="todo__left">
+          <input type="checkbox">
+          <p>Tarea superImportante hahaaha</p>
+        </div>
+        <div class="todo-right">
+          <span class="todo__date">(24/12/20)</span>
+
+          <div class="tip-container">
+            <img class="tip-to-delete">
+          </div>
+        </div>
+      </div>
+
+      <button>Add new Todo</button>
+
+    </section>
+  </main>
+</body>
+</html>
